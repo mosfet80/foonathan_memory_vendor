@@ -86,8 +86,12 @@ if(NOT _EXIT_CODE EQUAL 0)
 
   if(INSTALLER_PLATFORM)
     set(PATCH_COMMAND_STR PATCH_COMMAND
+      git apply ${CMAKE_CURRENT_SOURCE_DIR}/fix_constexpr_assert.patch &&
       git apply ${CMAKE_CURRENT_SOURCE_DIR}/CMakeLists.txt.patch &&
       sed -i -e "s/INSTALLER_PLATFORM/${INSTALLER_PLATFORM}/g" CMakeLists.txt)
+  else()
+    set(PATCH_COMMAND_STR PATCH_COMMAND
+      git apply ${CMAKE_CURRENT_SOURCE_DIR}/fix_constexpr_assert.patch)
   endif()
 
   externalproject_add(foo_mem-ext
