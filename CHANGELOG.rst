@@ -2,6 +2,11 @@
 Changelog for package foonathan_memory_vendor
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Update upstream to release 0.7-4 (#75)
+* Remove installer CMake patches (#75)
+
 1.3.2 (2025-12-22)
 ------------------
 * Improve mechanism to find an installation of foonathan_memory (#67)
