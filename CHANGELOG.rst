@@ -2,6 +2,10 @@
 Changelog for package foonathan_memory_vendor
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Update upstream to fix build with clang (#80)
+
 1.4.0 (2026-01-05)
 ------------------
 * Update upstream to release 0.7-4 (#75)
